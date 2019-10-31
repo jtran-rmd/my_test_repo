@@ -33,5 +33,11 @@ Test
 
 How was your weekend? I'll be dying this one. 
 
+```{r}
+ggplot(ford) +
+  geom_bar(aes(x = VehicleAge, fill = Cause)) +
+  theme_minimal()
+```
+
 
 
