@@ -1,0 +1,35 @@
+---
+title: "Git_Test"
+author: "Jason Tran"
+date: "10/29/2019"
+output: html_document
+---
+```{r}
+library(tidyverse)
+library(broom)
+library(faraway) #NEW! Be sure to install this package!
+library(Sleuth3) #NEW! Need to install this to access the data!
+library(GGally)
+library(tidyverse)
+```
+
+This is plain text not in a r code chunk
+
+```{r}
+ford <- ex2018
+```
+
+
+```{r}
+ford %>% 
+  count(Make, Cause) %>% 
+  group_by(Make) %>% 
+  mutate(prop = n/sum(n))
+```
+
+
+Here is a piece of test text
+Test
+
+
+
